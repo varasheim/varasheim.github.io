@@ -17,8 +17,7 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
-  test:
-     - name: Run typescript lint and format check
+      - name: Run typescript lint and format check
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
